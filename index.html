@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Merlina Sublimados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="Logo de Merlina Sublimados" width="100" height="100">
+        <h1>Merlina Sublimados</h1>
+    </header>
+    <nav class="menu">
+        <ul class="flex-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+    <main id="inicio">
+       
+        <h2>Bienvenid@ a Merlina Sublimados!</h2>
+        <p>Somos una empresa dedicada a crear diseños personalizados cuidando cada detalle. Nos dedicamos a ofrecer productos de alta calidad y un servicio excepcional. </p>
+        
+        <h3>Productos</h3>
+        <section class="grid-container" id="productos">
+            <article>
+                <h4>Taza cerámica</h4>
+                <img src="./productos/tazas.jpg" alt="Taza cerámica" width="210" height="180">
+                <p>Cuenta con una capacidad de 330 ml y es apta para microondas.</p>
+                <p class="precio">$9.000</p>
+                <div>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+
+            </article>
+
+            <article>
+                <h4>Rompecabezas</h4>
+                <img src="./productos/rompecabezas.jpg" alt="Rompecabezas" width="210" height="180">
+                <p>Rompecabezas de madera con 30 piezas.</p>
+                <p class="precio">$12.000</p>
+                <div>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </article>
+            <article>
+                <h4>Botinero</h4>
+                <img src="./productos/botinero.jpg" alt="Botinero" width="180" height="210">
+                <p>Botinero confeccionado en simil neopreno y cordura. </p>
+                <p class="precio">$15.000</p>
+                <div>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </article>
+           
+        </section>
+
+        <section id="nosotros">
+            <h3>Nosotros</h3>
+            <p>Te invitamos a conocer como elaboramos nuestros productos.</p>
+            <div class="video-container">
+                <video controls poster="preview.jpg" width="600" height="400">
+                    <source src="video.mp4" type="video/mp4">
+                    <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+                </video>
+            </div>
+        </section>  
+        
+        <h3>Servicios</h3>
+
+        <section class="box" id="servicios">
+          
+            <p>Para adquirir nuestros productos, contamos con los siguientes servicios:</p>
+            <ul>
+                <li>Si encontraste lo que buscabas, podes añadirlo directamente al carrito de compras.</li>
+                <li>Diseños personalizados. Si deseas otro diseño, no dudes en solicitarlo.</li>
+                <li>Asesoramiento en la elección de materiales y acabados.</li>
+                <li>Entrega a domicilio en todo el país.</li>
+            </ul>
+        </section>
+
+        <h3>Reseñas</h3>
+
+        <section class="reseñas">
+            
+
+            <section class="card">
+                    <h4>Fernando Cherry</h4>
+                    <p>"Excelente calidad y atención al cliente. Recomiendo sus productos."</p>
+                </section>
+
+                <section class="card">
+                    <h4>Susana Lunatti</h4>
+                    <p>"Me encantó el diseño personalizado que hicieron para mi taza. Quedó perfecto!"</p>
+                </section>
+
+                <section class="card">
+                    <h4>Mercedes Antonelli</h4>
+                    <p>"Los rompecabezas son muy divertidos y resistentes. A mis hijos les encantaron!"</p>
+                </section>
+        </section>
+
+
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <form action="https://formspree.io/f/xvkgvdbg" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <table border="1"> 
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo electrónico</th>
+                        <th>Mensaje</th>
+                        <th>Respuesta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ariel Hernan</td>
+                        <td>arielh@gmail.com</td>
+                        <td>En qué zona estan? </td>
+                         <td rowspan="3">Pendientes</td>
+                    </tr>
+                    <tr>
+                        <td>Dante Benjamin</td>
+                        <td>dantusky@hotmail.com</td>
+                        <td>Me interesa sumarme al proyecto. Les comparto mi currículum.</td>
+                    </tr>
+                    <tr>
+                        <td>Ciro Karin</td>
+                        <td>cirito@gmail.com</td>
+                        <td>Se puede realizar un pedido personalizado?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>@ 2026 Merlina Sublimados. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
